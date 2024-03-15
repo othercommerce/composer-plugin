@@ -20,11 +20,11 @@
     },
     "autoload": {
         "psr-4": {
-            "Plenny\\Composer\\Repositories\\": "src/"
+            "OtherCommerce\\Composer\\Repositories\\": "src/"
         }
     },
     "extra": {
-        "class": "Plenny\\Composer\\Repositories\\RepositoriesPlugin",
+        "class": "OtherCommerce\\Composer\\Repositories\\RepositoriesPlugin",
         "plugin-modifies-downloads": true,
         "branch-alias": {
             "dev-master": "1.x-dev"

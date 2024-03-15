@@ -1,6 +1,6 @@
 <?php
 
-namespace Plenny\Composer\Repositories;
+namespace OtherCommerce\Composer\Repositories;
 
 
 use Composer\Composer;
