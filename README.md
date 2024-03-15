@@ -31,14 +31,21 @@ use a standard remote repository.
 
 ## Installation
 
-Simply install this plugin using composer as a dependency
+This plugin has to be installed globally, as it needs to be available before
+composer tries to fetch dependencies resolved by the plugin. This is kind of
+chicken-egg-dilemma situation.
+
+Simply install this plugin globally using composer:
 
 ```bash
-composer require othercommerce/composer-plugin
+composer global require othercommerce/composer-plugin
 ```
 
-You will need to configure this as allowed composer plugin in your `composer.json`
-file to enable it:
+When asked to trust plugin type `y` in your terminal, this will allow plugin
+to be executed by composer, when installing dependencies in your projects.
+
+If you didn't allow the plugin at first install, you can configure this later
+in your global `composer.json` file to enable it:
 
 ```json
 {
@@ -49,6 +56,9 @@ file to enable it:
     }
 }
 ```
+
+Usually, you can find your global `composer.json` in your user home directory
+inside `.composer` hidden directory.
 
 ## Configuration
 
