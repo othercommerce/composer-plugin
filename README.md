@@ -6,6 +6,22 @@ as a dependency when working on the OtherCommerce core features, and using
 a proper remote repository in production without having to manually changing
 your `composer.json` file every time.
 
+<!-- TOC -->
+* [OtherCommerce Composer Plugin](#othercommerce-composer-plugin)
+  * [How does it work](#how-does-it-work)
+  * [Installation](#installation)
+  * [Configuration](#configuration)
+    * [Keeping configuration file in repository](#keeping-configuration-file-in-repository)
+    * [Available options](#available-options)
+      * [`remote.url`](#remoteurl)
+      * [`remote.force`](#remoteforce)
+      * [`local.path`](#localpath)
+    * [Using environment variable](#using-environment-variable)
+      * [Setting in Unix](#setting-in-unix)
+      * [Setting in Windows](#setting-in-windows)
+    * [Note on the paths](#note-on-the-paths)
+<!-- TOC -->
+
 ## How does it work
 
 This plugin simply manages composer.json repositories to provide a proper
