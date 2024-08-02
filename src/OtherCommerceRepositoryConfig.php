@@ -50,7 +50,7 @@ class OtherCommerceRepositoryConfig
     {
         return [
             'remote' => [
-                'url' => 'git@gitlab.promoznawcy.pl:procommerce/monorepo.git',
+                'url' => 'git@github.com:othercommerce/framework.git',
                 'force' => false,
             ],
             'local' => [
